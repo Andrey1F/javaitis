@@ -4,7 +4,8 @@
 public class Rectangle extends Figure implements Area{
     double a,b;
 
-    public Rectangle(double a, double b) {
+    public Rectangle(double x, double y, double a, double b) {
+        super(x, y);
         this.a = a;
         this.b = b;
     }

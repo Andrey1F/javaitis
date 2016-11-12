@@ -4,12 +4,15 @@
 public class Main {
 
     public static void main(String[] args) {
-        Circle circle = new Circle(2.0);
-        Rectangle rect = new Rectangle(4.0, 5.0);
-        Square square = new Square(5.0);
+        Area figure[] = new Area[3];
+        figure[0] = new Circle(1.0, 1.0, 2.0);
+        figure[1] = new Rectangle(1.0, 1.0, 4.0, 5.0);
+        figure[2] = new Square(1.0, 1.0, 5.0);
 
-        System.out.println(circle.getArea());
-        System.out.println(rect.getArea());
-        System.out.println(square.getArea());
+        for (int i = 0; i < 3; i++) {
+
+            System.out.println(figure[i].getArea());
+        }
+
     }
 }
