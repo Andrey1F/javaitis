@@ -36,9 +36,8 @@ public class QuickSort {
                   System.out.println("---------------");
               // end of debug
 
-              if (d > m+1) {System.out.println("right"); SortStage right = new SortStage(d, m);
-                  }
-                if (m > 1) {System.out.println("left"); SortStage left = new SortStage(m-1, 0);}
+              if (d > m+1) {SortStage right = new SortStage(d, m);}
+                if (m > 1) {SortStage left = new SortStage(m-1, 0);}
 
 
               }
